@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    >
+
+
+    <TextView
+        android:id="@+id/InstructorName"
+        android:layout_width="312dp"
+        android:layout_height="99dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="52dp"
+        android:text="Full Name"
+        android:textSize="60sp" />
+
+
+
+    <TextView
+        android:id="@+id/comment1"
+        android:layout_below="@+id/InstructorName"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="52dp"
+        android:text=""
+        android:hint="Review here"
+        android:gravity="center"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/comment2"
+        android:layout_below="@+id/comment1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        android:text=""
+        android:hint="Review here"
+        android:gravity="center"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/writeComment"
+        android:layout_below="@id/comment2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Write a Review"
+        android:gravity="center"/>
+    <EditText
+        android:id="@+id/noOfStars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/writeComment"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Number of Stars"
+        />
+
+    <Button
+        android:id="@+id/reviewSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/noOfStars"
+        android:layout_marginTop="10dp"
+        android:text="Submit Review" />
+
+    <Button
+        android:id="@+id/showReview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reviewSubmit"
+        android:layout_marginTop="10dp"
+        android:text="Display Review" />
+
+
+
+
+
+</RelativeLayout>

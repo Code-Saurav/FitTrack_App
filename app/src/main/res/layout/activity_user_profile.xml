@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    >
+
+
+
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="24dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/profileName"
+        android:layout_width="209dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="24dp"
+        android:layout_toRightOf="@+id/profileImage"
+        android:text="Profilename"
+        android:textSize="24sp" />
+
+
+    <TextView
+        android:id="@+id/profilePhone"
+        android:layout_width="209dp"
+        android:layout_height="43dp"
+        android:layout_below="@id/profileName"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="24dp"
+        android:layout_toRightOf="@id/profileImage"
+        android:text="ProfilePhone"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/updateORnextPage"
+        android:layout_width="215dp"
+        android:layout_height="151dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="451dp"
+        android:text="updateEmail" />
+
+    <EditText
+        android:id="@+id/newEmail"
+        android:layout_width="386dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="259dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="New Email" />
+</RelativeLayout>

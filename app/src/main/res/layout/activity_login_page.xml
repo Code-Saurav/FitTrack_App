@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    >
+
+
+    <Button
+        android:id="@+id/signInGoogle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Sign in with Google"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/signInFb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signInGoogle"
+        android:layout_centerHorizontal="true"
+        android:text="Sign in with Facebook"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/lTor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signInFb"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Not a memeber, Sign Up Now !"
+        android:textColor="#F57F17"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/logPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lTor"
+        android:ems="10"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:inputType="textEmailAddress"
+        android:hint="Phone"
+        android:textAllCaps="true" />
+
+    <EditText
+        android:id="@+id/logPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/logPhone"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/signIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Sign in with Email"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/agreement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signIn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:text="By continuing forward,you agree to MWT's Privacy Policy and Term and Conditions"
+        android:textColor="#F57F17"
+        android:textSize="16sp"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="156dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    >
+
+
+    <Button
+        android:id="@+id/signUpGoogle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Sign up with Google"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/signUpFb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signUpGoogle"
+        android:layout_centerHorizontal="true"
+        android:text="Sign up with Facebook"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/rToL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signUpFb"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#00000000"
+        android:text="or sign in with Email "
+        android:textColor="#F57F17"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/regName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rToL"
+        android:ems="10"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:inputType="text"
+        android:hint="Full Name"
+        android:textAllCaps="true" />
+
+    <EditText
+        android:id="@+id/regPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/regName"
+        android:ems="10"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:inputType="phone"
+        android:hint="Phone Number"
+        android:textAllCaps="true" />
+
+    <EditText
+        android:id="@+id/regEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/regPhone"
+        android:ems="10"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:inputType="textEmailAddress"
+        android:hint="Email Address"
+        android:textAllCaps="true" />
+
+    <EditText
+        android:id="@+id/regPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/regEmail"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/signUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/regPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Submit"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/agreement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signUp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="By continuing forward,you agree to MWT's Privacy Policy and Term and Conditions"
+        android:textColor="#F57F17"
+        android:textSize="16sp"
+        />
+
+</RelativeLayout>
