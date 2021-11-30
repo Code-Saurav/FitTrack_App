@@ -44,6 +44,69 @@
 
         <activity android:name=".review" android:exported="false"/>
 
+<!--        wokout file -->
+
+        <activity
+            android:name=".WeightTracker"
+            android:exported="true" />
+        <activity
+            android:name=".AdvArms"
+            android:exported="true" />
+        <activity
+            android:name=".AdvLegs"
+            android:exported="true" />
+        <activity
+            android:name=".AdvBack"
+            android:exported="true" />
+        <activity
+            android:name=".AdvShoulder"
+            android:exported="true" />
+        <activity
+            android:name=".AdvChest"
+            android:exported="true" />
+        <activity
+            android:name=".AdvActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ArmInt"
+            android:exported="true" />
+        <activity
+            android:name=".LegInt"
+            android:exported="true" />
+        <activity
+            android:name=".BackInt"
+            android:exported="true" />
+        <activity
+            android:name=".ShoulderInt"
+            android:exported="true" />
+        <activity
+            android:name=".ChestInt"
+            android:exported="true" />
+        <activity
+            android:name=".IntActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ArmPage"
+            android:exported="true" />
+        <activity
+            android:name=".LegPage"
+            android:exported="true" />
+        <activity
+            android:name=".BackPage"
+            android:exported="true" />
+        <activity
+            android:name=".ShouldersPage"
+            android:exported="true" />
+        <activity
+            android:name=".ChestPage"
+            android:exported="true" />
+        <activity
+            android:name=".ActivityPage2"
+            android:exported="true" />
+        <activity
+            android:name=".workoutActivity"
+            android:exported="true"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="true">

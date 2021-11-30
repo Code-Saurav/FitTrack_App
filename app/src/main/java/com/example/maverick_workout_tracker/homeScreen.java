@@ -20,7 +20,7 @@ public class homeScreen extends AppCompatActivity
     CardView cardinstructor;
     
     @Override
-    protected void onCreate(Bundle savedInstanceState) 
+    protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homepage);
@@ -72,7 +72,8 @@ public class homeScreen extends AppCompatActivity
             @Override
             public void onClick(View v)
             {
-                showToast("Workout Clicked");
+                Intent loadWorkoutPage = new Intent(homeScreen.this, workoutActivity.class);
+                startActivity(loadWorkoutPage);
             }
         });
 

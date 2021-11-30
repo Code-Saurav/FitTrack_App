@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".workoutActivity">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="334dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="56dp"
+        android:text="Maverick Workout Planner "
+        android:gravity="center"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/plannerMessage"
+        android:layout_width="300dp"
+        android:layout_height="59dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/title"
+        android:gravity="center"
+        android:layout_marginTop="60dp"
+        android:text="Welcome, please select your experience level. This will determine your workout plan."
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="236dp"
+        android:layout_height="64dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="272dp"
+        android:text="Beginner" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="236dp"
+        android:layout_height="64dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="198dp"
+        android:text="Intermediate" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="236dp"
+        android:layout_height="64dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="58dp"
+        android:text="MyProgress" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="236dp"
+        android:layout_height="64dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="130dp"
+        android:text="Advanced" />
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
