@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <ImageView
+        android:id="@+id/instructorPic"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/instructor1" />
+
+
+
+
+
+    <Button
+        android:id="@+id/instructorReview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/instructorPic"
+        android:layout_marginTop="100dp"
+        android:text="Review" />
+
+    <Button
+        android:id="@+id/instructorPurchasse"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/instructorReview"
+        android:layout_marginTop="50dp"
+        android:text="Purchase" />
+
+    <TextView
+        android:id="@+id/instructorPicName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/instructorPic"
+        android:gravity="center"
+        android:text="JOHN"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+</RelativeLayout>
+

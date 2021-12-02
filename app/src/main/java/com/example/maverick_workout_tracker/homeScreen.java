@@ -39,11 +39,8 @@ public class homeScreen extends AppCompatActivity
             public void onClick(View v) 
             {
 
-                Intent registrationP = new Intent(getApplicationContext(), login_page.class);
-                startActivity(registrationP);
-//                Load suscription page
-//                Intent intent = new Intent(homeScreen.this,SubscriptionPage.class);
-//                startActivity(intent);
+                Intent loadProfile = new Intent(getApplicationContext(), userProfile.class);
+                startActivity(loadProfile);
             }
         });
 
@@ -82,7 +79,9 @@ public class homeScreen extends AppCompatActivity
             @Override
             public void onClick(View v)
             {
-                showToast("Search Clicked");
+                Intent loadSearchPage = new Intent(homeScreen.this, search.class);
+                startActivity(loadSearchPage);
+
             }
         });
 
@@ -92,11 +91,8 @@ public class homeScreen extends AppCompatActivity
                     public void onClick(View v)
                     {
 
-                        Intent loadpayment = new Intent(getApplicationContext(), SubscriptionPage.class);
-                        startActivity(loadpayment);
-//                Load suscription page
-//                Intent intent = new Intent(homeScreen.this,SubscriptionPage.class);
-//                startActivity(intent);
+                        Intent loadInstructors = new Intent(homeScreen.this, instructors.class);
+                        startActivity(loadInstructors);
                     }
 
 

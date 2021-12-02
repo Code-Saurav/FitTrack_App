@@ -16,15 +16,13 @@ public class userProfile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_profile);
 
+        Button trackProgressBtn = findViewById(R.id.trackMyProgress);
 
-        Button nextPageBtn ;
-        nextPageBtn = findViewById(R.id.updateORnextPage);
-
-        nextPageBtn.setOnClickListener(new View.OnClickListener() {
+        trackProgressBtn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Intent loadReviewPage = new Intent(getApplicationContext(),review.class);
-                startActivity(loadReviewPage);
+            public void onClick(View v) {
+                Intent loadUserProgress = new Intent(getApplicationContext(),WeightTracker.class);
+                startActivity(loadUserProgress);
             }
         });
     }

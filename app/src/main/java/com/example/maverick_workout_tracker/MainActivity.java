@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         welcomeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent loadLoginMain = new Intent(getApplicationContext(),homeScreen.class);
+                Intent loadLoginMain = new Intent(getApplicationContext(),login_page.class);
                 startActivity(loadLoginMain);
             }
         });

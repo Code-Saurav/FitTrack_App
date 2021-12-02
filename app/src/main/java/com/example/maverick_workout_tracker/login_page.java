@@ -66,8 +66,10 @@ public class login_page extends AppCompatActivity {
                                    Toast.makeText(getApplicationContext(), "Verified Login", Toast.LENGTH_SHORT).show();
                                    loginPb.setVisibility(ProgressBar.VISIBLE);
 
-                                   Intent loadUserProfile = new Intent(getApplicationContext(), userProfile.class);
+
+                                   Intent loadUserProfile = new Intent(getApplicationContext(), homeScreen.class);
                                    startActivity(loadUserProfile);
+                                   loginPb.setVisibility(ProgressBar.GONE);
                                }
                                else{
                                    Toast.makeText(getApplicationContext(), "Incorrect Password, ", Toast.LENGTH_SHORT).show();

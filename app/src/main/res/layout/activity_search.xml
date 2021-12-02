@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+
+    >
+
+
+    <TextView
+        android:id="@+id/searchTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="What are you looking for ?"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/searchWorkout"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/searchTitle"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:text="Workout" />
+
+    <Button
+        android:id="@+id/searchWorkoutPlan"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/searchWorkout"
+        android:layout_marginTop="20dp"
+        android:text="Workout plan" />
+
+    <Button
+        android:id="@+id/searchSupplement"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/searchWorkoutPlan"
+        android:layout_marginTop="20dp"
+        android:text="Supplement" />
+
+
+</RelativeLayout>
