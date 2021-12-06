@@ -2,45 +2,51 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:paddingLeft="25dp"
-    android:paddingRight="25dp"
-    >
+    android:paddingRight="25dp">
 
+
+    <ImageView
+        android:id="@+id/instructorPic"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/instructor1"
+        />
 
     <TextView
-        android:id="@+id/InstructorName"
-        android:layout_width="312dp"
-        android:layout_height="99dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="52dp"
-        android:text="Full Name"
-        android:textSize="60sp" />
-
+        android:id="@+id/instructorPicName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/instructorPic"
+        android:gravity="center"
+        android:text="JOHN"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
 
     <TextView
         android:id="@+id/comment1"
-        android:layout_below="@+id/InstructorName"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:layout_marginTop="52dp"
-        android:text=""
-        android:hint="Review here"
+        android:layout_below="@+id/instructorPicName"
+        android:layout_marginTop="10dp"
         android:gravity="center"
-        android:textSize="20sp" />
+        android:hint="Review here"
+        android:text=""
+        android:textSize="20sp"
+        android:textStyle="italic" />
 
     <TextView
         android:id="@+id/comment2"
-        android:layout_below="@+id/comment1"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/comment1"
         android:layout_marginTop="40dp"
-        android:text=""
-        android:hint="Review here"
         android:gravity="center"
+        android:hint="Review here"
+        android:text=""
         android:textSize="20sp" />
 
     <EditText
