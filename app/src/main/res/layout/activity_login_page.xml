@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:paddingLeft="25dp"
     android:paddingRight="25dp"
+    android:background="@drawable/cat_background"
     >
 
 
@@ -43,22 +44,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/lTor"
-        android:ems="10"
-        android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:ems="10"
+        android:hint="Phone Number"
         android:inputType="textEmailAddress"
-        android:hint="Phone"
         android:textAllCaps="true" />
 
     <EditText
         android:id="@+id/logPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:layout_below="@id/logPhone"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
         android:ems="10"
-        android:hint="Password"
+
+        android:hint="Password (Minimum 6 Character Required)"
         android:inputType="textPassword" />
 
     <Button

@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:paddingLeft="25dp"
     android:paddingRight="25dp"
+    android:background="@drawable/cat_background"
     >
 
 
@@ -68,11 +69,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/regPhone"
-        android:ems="10"
-        android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true"
-        android:inputType="textEmailAddress"
+        android:layout_marginTop="30dp"
+        android:ems="10"
         android:hint="Email Address"
+        android:inputType="textEmailAddress"
         android:textAllCaps="true" />
 
     <EditText
@@ -83,7 +84,7 @@
         android:layout_below="@id/regEmail"
         android:layout_centerHorizontal="true"
         android:ems="10"
-        android:hint="Password"
+        android:hint="Password (Minimum 6 characters Required"
         android:inputType="textPassword" />
 
     <Button

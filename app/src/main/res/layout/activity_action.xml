@@ -4,24 +4,37 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingLeft="16dp"
-    android:paddingRight="16dp">
+    android:paddingRight="16dp"
+    android:background="@drawable/cat_background"
+    >
 
     <ImageView
         android:id="@+id/instructorPic"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_marginTop="20dp"
-        app:srcCompat="@drawable/instructor1" />
+        app:srcCompat="@drawable/instructor1"
+        />
 
+    <TextView
+        android:id="@+id/aboutInstructor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/instructorPic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:textStyle="italic"
+        android:text="John is very experienced workot Trainer. He has been training people for over 10 years. He himself have been athelete for over 15 years. After taking retirement from his atheletic carrier, He decided to train other athelete and help people to get fit."
 
-
+        />
 
 
     <Button
         android:id="@+id/instructorReview"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_below="@id/instructorPic"
+        android:layout_below="@id/aboutInstructor"
         android:layout_marginTop="100dp"
         android:text="Review" />
 
@@ -41,6 +54,6 @@
         android:gravity="center"
         android:text="JOHN"
         android:textSize="30sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 </RelativeLayout>
 

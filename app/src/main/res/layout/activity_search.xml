@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:paddingLeft="25dp"
     android:paddingRight="25dp"
+    android:background="@drawable/cat_background"
 
     >
 

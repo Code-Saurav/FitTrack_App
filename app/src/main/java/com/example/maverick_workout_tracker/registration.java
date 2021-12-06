@@ -49,8 +49,7 @@ public class registration extends AppCompatActivity {
         signUpBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                    Toast toast = Toast.makeText(getApplicationContext(),"signUpBtn",Toast.LENGTH_SHORT);
-//                    toast.show();
+//
                 String regName = fullName.getText().toString();
                 String regEmail = email.getText().toString();
                 String regPhone  = phone.getText().toString();
@@ -64,16 +63,22 @@ public class registration extends AppCompatActivity {
                 Boolean initIsInstructor = false;
 
                 // get all the value
-                helper help = new helper(regName, regEmail,regPhone,regPassword, initIsMember, initIsPremium, initIsInstructor);
-
-                root.child(regPhone).setValue(help);
 
                 if(regEmail != null && regName != null && regPhone != null && regPassword != null) {
-                    Toast.makeText(getApplicationContext(), "Registration Completed, Please Proceed with Login", Toast.LENGTH_SHORT).show();
-                    Intent loadLogin = new Intent(getApplicationContext(), login_page.class);
-                    startActivity(loadLogin);
+
+                    if (regPassword.length() < 6 ) {
+                        Toast.makeText(getApplicationContext(), "Password should be Minimum 6 character long", Toast.LENGTH_SHORT).show();
+                    }
+                    else{
+                        helper help = new helper(regName, regEmail,regPhone,regPassword, initIsMember, initIsPremium, initIsInstructor);
+                        root.child(regPhone).setValue(help);
+                        Toast.makeText(getApplicationContext(), "Registration Completed, Please Proceed with Login", Toast.LENGTH_SHORT).show();
+                        Intent loadLogin = new Intent(getApplicationContext(), login_page.class);
+                        startActivity(loadLogin);
+                    }
                 }
                 else{
+
                     Toast.makeText(getApplicationContext(), "read the instruction carefully", Toast.LENGTH_SHORT).show();
                 }
             }

@@ -17,14 +17,23 @@
         <entry key="app/src/main/res/font/alfa_slab_one.xml" value="0.21979166666666666" />
         <entry key="app/src/main/res/layout/activity_action.xml" value="0.19739583333333333" />
         <entry key="app/src/main/res/layout/activity_adv.xml" value="0.41354166666666664" />
+        <entry key="app/src/main/res/layout/activity_adv_arms.xml" value="0.2223731884057971" />
+        <entry key="app/src/main/res/layout/activity_adv_back.xml" value="0.2223731884057971" />
+        <entry key="app/src/main/res/layout/activity_adv_chest.xml" value="0.2223731884057971" />
         <entry key="app/src/main/res/layout/activity_calander.xml" value="0.20989583333333334" />
         <entry key="app/src/main/res/layout/activity_homepage.xml" value="0.23697916666666666" />
         <entry key="app/src/main/res/layout/activity_instructor_action.xml" value="0.42864583333333334" />
         <entry key="app/src/main/res/layout/activity_instructors.xml" value="0.5786458333333333" />
+        <entry key="app/src/main/res/layout/activity_int.xml" value="0.2223731884057971" />
+        <entry key="app/src/main/res/layout/activity_leg_page.xml" value="0.2223731884057971" />
         <entry key="app/src/main/res/layout/activity_login_page.xml" value="0.22239583333333332" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_page2.xml" value="0.2223731884057971" />
+        <entry key="app/src/main/res/layout/activity_registration.xml" value="0.2223731884057971" />
         <entry key="app/src/main/res/layout/activity_review.xml" value="0.5786458333333333" />
-        <entry key="app/src/main/res/layout/activity_search.xml" value="0.5786458333333333" />
+        <entry key="app/src/main/res/layout/activity_search.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_shoulder_int.xml" value="0.2223731884057971" />
+        <entry key="app/src/main/res/layout/activity_shoulders_page.xml" value="0.2223731884057971" />
         <entry key="app/src/main/res/layout/activity_user_profile.xml" value="0.34739583333333335" />
         <entry key="app/src/main/res/layout/activity_weight_tracker.xml" value="0.23020833333333332" />
         <entry key="app/src/main/res/layout/activity_workout.xml" value="0.23020833333333332" />
